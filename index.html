@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased light">
+  <head>
+    <meta charset="utf-8" />
+    <title>zflake</title>
+    <style>
+      html {
+        display: grid;
+        place-content: center;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        gap: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function randomDelay(max) {
+        const delay = Math.random() * max;
+        return new Promise((resolve) => {
+          setTimeout(resolve, delay);
+        });
+      }
+
+      const delayLimit = Math.pow(2, :n:);
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const buttonOne = document.createElement("button");
+        const buttonTwo = document.createElement("button");
+        const buttonThree = document.createElement("button");
+        const success = document.createElement("div");
+
+        buttonOne.innerText = "one";
+        buttonTwo.innerText = "two";
+        buttonThree.innerText = "three";
+        success.id = "status"
+        success.textContent = "success";
+
+        buttonOne.onclick = async () => {
+          await randomDelay(delayLimit);
+          document.body.appendChild(buttonTwo);
+        };
+
+        buttonTwo.onclick = async () => {
+          await randomDelay(delayLimit);
+          document.body.appendChild(buttonThree);
+        };
+
+        buttonThree.onclick = async () => {
+          await randomDelay(delayLimit);
+          document.body.appendChild(success);
+        };
+
+        await randomDelay(delayLimit);
+        document.body.appendChild(buttonOne);
+      });
+    </script>
+  </body>
+</html>
