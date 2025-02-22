@@ -5,7 +5,7 @@ I used this code to figure out some of the stuff in https://henry.catalinismith.
 ## Installation
 
 ```
-git clone git@github.com:henrycatalinismith/playwright-reliability-comparison.git
+git clone gitcodeberg.org:henrycatalinismith/playwright-reliability-comparison.git
 ```
 
 ## Usage
