@@ -55,3 +55,7 @@ Running 2 tests using 1 worker
     [chromium] › playwright.spec.js:5:1 › flaky ────────────────────────────────────────────────────
   1 passed (6.3s)
 ```
+
+## License
+
+[MIT](https://codeberg.org/henrycatalinismith/playwright-reliability-comparison/src/branch/main/license)
