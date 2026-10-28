@@ -58,4 +58,4 @@ Running 2 tests using 1 worker
 
 ## License
 
-[MIT](https://codeberg.org/henrycatalinismith/playwright-reliability-comparison/src/branch/main/license)
+[MIT](https://github.com/henrycatalinismith/playwright-reliability-comparison/blob/main/license)
